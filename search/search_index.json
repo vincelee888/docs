@@ -1,0 +1,19 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "Ionide\n\n\nIonide is a \nVisual Studio Code\n package suite for cross platform F# development.\n\n\nRequirements\n\n\n\n\nVisual Studio Code - it is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux created by Microsoft. For detailed documentation of editor, getting-started guides and more visit \nofficial documentation\n.", 
+            "title": "Ionide"
+        }, 
+        {
+            "location": "/#ionide", 
+            "text": "Ionide is a  Visual Studio Code  package suite for cross platform F# development.", 
+            "title": "Ionide"
+        }, 
+        {
+            "location": "/#requirements", 
+            "text": "Visual Studio Code - it is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux created by Microsoft. For detailed documentation of editor, getting-started guides and more visit  official documentation .", 
+            "title": "Requirements"
+        }
+    ]
+}
