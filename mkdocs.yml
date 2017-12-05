@@ -1,0 +1,21 @@
+# Project information
+site_name: Ionide Documentation
+site_description: Documentation for Ionide
+site_author: Krzysztof Cieslak
+site_url: http://ionide.io/docs/
+
+# Repository
+repo_name: Ionide/docs
+repo_url: https://github.com/Ionide/docs
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/Ionide'
+    - type: 'twitter'
+      link: 'https://twitter.com/IonideProject'
+    - type: globe
+      link: http://ionide.io
