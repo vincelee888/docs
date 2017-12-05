@@ -2,8 +2,8 @@
     "docs": [
         {
             "location": "/", 
-            "text": "Ionide\n\n\nIonide is a \nVisual Studio Code\n package suite for cross platform F# development.\n\n\nRequirements\n\n\n\n\nVisual Studio Code - it is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux created by Microsoft. For detailed documentation of editor, getting-started guides and more visit \nofficial documentation\n.", 
-            "title": "Ionide"
+            "text": "Ionide\n\n\nIonide is a \nVisual Studio Code\n package suite for cross platform F# development.\n\n\nOverview\n\n\nIonide for VSCode is set of 3 plugins avaliable in VSCode marketplace.\n\n\n\n\n\n\nIonide-fsharp\n - provides F# specific features including advanced editor features (autocomplete, go-to definition, tooltips, rename, various refactorings and quick fix suggestions), integration with .Net project system, project explorer for project file visualization and manipulation, integration with MsBuild for building and running applications, debugger integration and more.\n\n\n\n\n\n\nIonide-Paket\n - provides integration with Paket - package dependency manager for .NET with support for NuGet packages and GitHub repositories.\n\n\n\n\n\n\nIonide-FAKE\n - FAKE (F# Make) is popular F# tool and DSL for build orchestration.\n\n\n\n\n\n\nRequirements\n\n\n\n\n\n\nVisual Studio Code - it is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux created by Microsoft. For detailed documentation of editor, getting-started guides and more visit \nofficial documentation\n.\n\n\n\n\n\n\nF# - it is a mature, open source, cross-platform, functional-first programming language. It empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. Ionide supports any version of F# \n= 3.0 but we do recommend using F# 4.1. Detailed installation instructions can be found of F# Software foundation webpage - for \nWindows\n, \nMacOS\n, and \nLinux\n\n\n\n\n\n\nMsBuild 2015 (Windows only) - On Windows MsBuild 2015 (14.0) needs to be additionally installed. You can download it \nhere\n\n\n\n\n\n\n.Net Core SDK (optional) - .Net Core is lightweight, cross platform, modern implementation of .Net Framework. We strongly recommend installing it since some advanced Ionide features such as debugging and project scaffolding depends on SDK and \ndotnet\n CLI tooling even if your application is targetting Full Framework. For detailed instructions on installing .Net Core visit \nofficial step-by-step installation guide\n\n\n\n\n\n\nPlugin installation\n\n\nAny VSCode extension can be installed using UI just inside VSCode. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the \nView: Extensions\n command (\nCtrl+Shift+X\n). Then in search box type \nIonide\n to find all 3 extensions we provide. Click the \nInstall\n button and after a successful install, you'll see an \nReload\n button which will prompt you to restart VS Code to enable the new extension. For more detailed information about plugin installation visit \nVSCode documentation\n\n\nPlugin activation\n\n\nVSCode plugins are running in external processes (which means they should never impact editor performance) and are activated lazily, when certain activation events happens. This means that plugins are not loaded unnecesserly, for example when you don't work on project using given programming language.\n\n\nIonide plugins are activated when:\n\n\n\n\n\n\nOpened workspace contains any \n.fsproj\n, \n.fs\n, or \n.fsx\n file\n\n\n\n\n\n\nNew \n.fsproj\n, \n.fs\n, or \n.fsx\n file is created in workspace that was not containign those files before.", 
+            "title": "Home"
         }, 
         {
             "location": "/#ionide", 
@@ -11,9 +11,299 @@
             "title": "Ionide"
         }, 
         {
+            "location": "/#overview", 
+            "text": "Ionide for VSCode is set of 3 plugins avaliable in VSCode marketplace.    Ionide-fsharp  - provides F# specific features including advanced editor features (autocomplete, go-to definition, tooltips, rename, various refactorings and quick fix suggestions), integration with .Net project system, project explorer for project file visualization and manipulation, integration with MsBuild for building and running applications, debugger integration and more.    Ionide-Paket  - provides integration with Paket - package dependency manager for .NET with support for NuGet packages and GitHub repositories.    Ionide-FAKE  - FAKE (F# Make) is popular F# tool and DSL for build orchestration.", 
+            "title": "Overview"
+        }, 
+        {
             "location": "/#requirements", 
-            "text": "Visual Studio Code - it is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux created by Microsoft. For detailed documentation of editor, getting-started guides and more visit  official documentation .", 
+            "text": "Visual Studio Code - it is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux created by Microsoft. For detailed documentation of editor, getting-started guides and more visit  official documentation .    F# - it is a mature, open source, cross-platform, functional-first programming language. It empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. Ionide supports any version of F#  = 3.0 but we do recommend using F# 4.1. Detailed installation instructions can be found of F# Software foundation webpage - for  Windows ,  MacOS , and  Linux    MsBuild 2015 (Windows only) - On Windows MsBuild 2015 (14.0) needs to be additionally installed. You can download it  here    .Net Core SDK (optional) - .Net Core is lightweight, cross platform, modern implementation of .Net Framework. We strongly recommend installing it since some advanced Ionide features such as debugging and project scaffolding depends on SDK and  dotnet  CLI tooling even if your application is targetting Full Framework. For detailed instructions on installing .Net Core visit  official step-by-step installation guide", 
             "title": "Requirements"
+        }, 
+        {
+            "location": "/#plugin-installation", 
+            "text": "Any VSCode extension can be installed using UI just inside VSCode. Bring up the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of VS Code or the  View: Extensions  command ( Ctrl+Shift+X ). Then in search box type  Ionide  to find all 3 extensions we provide. Click the  Install  button and after a successful install, you'll see an  Reload  button which will prompt you to restart VS Code to enable the new extension. For more detailed information about plugin installation visit  VSCode documentation", 
+            "title": "Plugin installation"
+        }, 
+        {
+            "location": "/#plugin-activation", 
+            "text": "VSCode plugins are running in external processes (which means they should never impact editor performance) and are activated lazily, when certain activation events happens. This means that plugins are not loaded unnecesserly, for example when you don't work on project using given programming language.  Ionide plugins are activated when:    Opened workspace contains any  .fsproj ,  .fs , or  .fsx  file    New  .fsproj ,  .fs , or  .fsx  file is created in workspace that was not containign those files before.", 
+            "title": "Plugin activation"
+        }, 
+        {
+            "location": "/editing/", 
+            "text": "Editing evolved\n\n\nBasic features\n\n\nIntelliSense\n\n\nTooltips\n\n\nError highlighting\n\n\nCode navigation\n\n\nGo to definition\n\n\nGo to type definition\n\n\nGo to symbol in file\n\n\nGo to symbol in workspace\n\n\nFind all refrences\n\n\nPeek definition\n\n\nBracket matching\n\n\nGo to next symbol usage\n\n\nGo to MSDN help\n\n\nCodeLens and LineLens\n\n\nAdvanced analyzers\n\n\nFSharpLint integration\n\n\nUnused value analyzer\n\n\nUnnecessery open statement analyzer\n\n\nSimplify name analyzer\n\n\nRefactorings\n\n\nRename symbol\n\n\nQuick fixes\n\n\nGenerate comment scaffold", 
+            "title": "Editing evolved"
+        }, 
+        {
+            "location": "/editing/#editing-evolved", 
+            "text": "", 
+            "title": "Editing evolved"
+        }, 
+        {
+            "location": "/editing/#basic-features", 
+            "text": "", 
+            "title": "Basic features"
+        }, 
+        {
+            "location": "/editing/#intellisense", 
+            "text": "", 
+            "title": "IntelliSense"
+        }, 
+        {
+            "location": "/editing/#tooltips", 
+            "text": "", 
+            "title": "Tooltips"
+        }, 
+        {
+            "location": "/editing/#error-highlighting", 
+            "text": "", 
+            "title": "Error highlighting"
+        }, 
+        {
+            "location": "/editing/#code-navigation", 
+            "text": "", 
+            "title": "Code navigation"
+        }, 
+        {
+            "location": "/editing/#go-to-definition", 
+            "text": "", 
+            "title": "Go to definition"
+        }, 
+        {
+            "location": "/editing/#go-to-type-definition", 
+            "text": "", 
+            "title": "Go to type definition"
+        }, 
+        {
+            "location": "/editing/#go-to-symbol-in-file", 
+            "text": "", 
+            "title": "Go to symbol in file"
+        }, 
+        {
+            "location": "/editing/#go-to-symbol-in-workspace", 
+            "text": "", 
+            "title": "Go to symbol in workspace"
+        }, 
+        {
+            "location": "/editing/#find-all-refrences", 
+            "text": "", 
+            "title": "Find all refrences"
+        }, 
+        {
+            "location": "/editing/#peek-definition", 
+            "text": "", 
+            "title": "Peek definition"
+        }, 
+        {
+            "location": "/editing/#bracket-matching", 
+            "text": "", 
+            "title": "Bracket matching"
+        }, 
+        {
+            "location": "/editing/#go-to-next-symbol-usage", 
+            "text": "", 
+            "title": "Go to next symbol usage"
+        }, 
+        {
+            "location": "/editing/#go-to-msdn-help", 
+            "text": "", 
+            "title": "Go to MSDN help"
+        }, 
+        {
+            "location": "/editing/#codelens-and-linelens", 
+            "text": "", 
+            "title": "CodeLens and LineLens"
+        }, 
+        {
+            "location": "/editing/#advanced-analyzers", 
+            "text": "", 
+            "title": "Advanced analyzers"
+        }, 
+        {
+            "location": "/editing/#fsharplint-integration", 
+            "text": "", 
+            "title": "FSharpLint integration"
+        }, 
+        {
+            "location": "/editing/#unused-value-analyzer", 
+            "text": "", 
+            "title": "Unused value analyzer"
+        }, 
+        {
+            "location": "/editing/#unnecessery-open-statement-analyzer", 
+            "text": "", 
+            "title": "Unnecessery open statement analyzer"
+        }, 
+        {
+            "location": "/editing/#simplify-name-analyzer", 
+            "text": "", 
+            "title": "Simplify name analyzer"
+        }, 
+        {
+            "location": "/editing/#refactorings", 
+            "text": "", 
+            "title": "Refactorings"
+        }, 
+        {
+            "location": "/editing/#rename-symbol", 
+            "text": "", 
+            "title": "Rename symbol"
+        }, 
+        {
+            "location": "/editing/#quick-fixes", 
+            "text": "", 
+            "title": "Quick fixes"
+        }, 
+        {
+            "location": "/editing/#generate-comment-scaffold", 
+            "text": "", 
+            "title": "Generate comment scaffold"
+        }, 
+        {
+            "location": "/project/", 
+            "text": "Project managment\n\n\nGeneral information\n\n\nProject explorere\n\n\nMsBuild integration", 
+            "title": "Project managment"
+        }, 
+        {
+            "location": "/project/#project-managment", 
+            "text": "General information", 
+            "title": "Project managment"
+        }, 
+        {
+            "location": "/project/#project-explorere", 
+            "text": "", 
+            "title": "Project explorere"
+        }, 
+        {
+            "location": "/project/#msbuild-integration", 
+            "text": "", 
+            "title": "MsBuild integration"
+        }, 
+        {
+            "location": "/debugger/", 
+            "text": "Debugging\n\n\nRequirements\n\n\n\n\n\n\nOmnisharp\n\n\n\n\n\n\nWorks for projects using new, SDK-based project files\n\n\n\n\n\n\nPortable PDB", 
+            "title": "Debugging"
+        }, 
+        {
+            "location": "/debugger/#debugging", 
+            "text": "", 
+            "title": "Debugging"
+        }, 
+        {
+            "location": "/debugger/#requirements", 
+            "text": "Omnisharp    Works for projects using new, SDK-based project files    Portable PDB", 
+            "title": "Requirements"
+        }, 
+        {
+            "location": "/testing/", 
+            "text": "Testing\n\n\nExpecto integration", 
+            "title": "Testing"
+        }, 
+        {
+            "location": "/testing/#testing", 
+            "text": "", 
+            "title": "Testing"
+        }, 
+        {
+            "location": "/testing/#expecto-integration", 
+            "text": "", 
+            "title": "Expecto integration"
+        }, 
+        {
+            "location": "/paket/", 
+            "text": "Paket Integration", 
+            "title": "Paket integration"
+        }, 
+        {
+            "location": "/paket/#paket-integration", 
+            "text": "", 
+            "title": "Paket Integration"
+        }, 
+        {
+            "location": "/fake/", 
+            "text": "FAKE integration", 
+            "title": "FAKE integration"
+        }, 
+        {
+            "location": "/fake/#fake-integration", 
+            "text": "", 
+            "title": "FAKE integration"
+        }, 
+        {
+            "location": "/commands/", 
+            "text": "List of commands", 
+            "title": "List of commands"
+        }, 
+        {
+            "location": "/commands/#list-of-commands", 
+            "text": "", 
+            "title": "List of commands"
+        }, 
+        {
+            "location": "/options/", 
+            "text": "List of options", 
+            "title": "List of options"
+        }, 
+        {
+            "location": "/options/#list-of-options", 
+            "text": "", 
+            "title": "List of options"
+        }, 
+        {
+            "location": "/architecture/", 
+            "text": "Plugin architecture\n\n\nVSCode plugin\n\n\nFsAutoComplete\n\n\nF# Compiler services", 
+            "title": "Architecture"
+        }, 
+        {
+            "location": "/architecture/#plugin-architecture", 
+            "text": "", 
+            "title": "Plugin architecture"
+        }, 
+        {
+            "location": "/architecture/#vscode-plugin", 
+            "text": "", 
+            "title": "VSCode plugin"
+        }, 
+        {
+            "location": "/architecture/#fsautocomplete", 
+            "text": "", 
+            "title": "FsAutoComplete"
+        }, 
+        {
+            "location": "/architecture/#f-compiler-services", 
+            "text": "", 
+            "title": "F# Compiler services"
+        }, 
+        {
+            "location": "/how-to-contribute/", 
+            "text": "How to contribute\n\n\nPrerequisites\n\n\n\n\nVisual Studio Code\n \ud83d\ude44\n\n\nMono\n\n\n.Net Core 2.0\n\n\nNode.js\n\n\nYarn\n\n\n\n\nBuilding\n\n\nFork, from the github interface https://github.com/ionide/ionide-vscode-fsharp\n - if you don't use a certificate for commiting to github:\n\n\ngit clone https://github.com/YOUR_GITHUB_USER/ionide-vscode-fsharp.git\n\n\n\n\n\n\nif you use a certificate for github authentication:\n\n\n\n\ngit clone git@github.com:YOUR_GITHUB_USER/ionide-vscode-fsharp.git\n\n\n\n\nFirst time build:\n\n\ncd ionide-vscode-fsharp\nyarn install\ndotnet restore\ncd src\ndotnet restore\ncd ..\n./build.sh  # or build.cmd if your OS is Windows\n\n\n\n\nEverything is done via \nbuild.cmd\n \\ \nbuild.sh\n.\n\n\n\n\nbuild Build\n does a full-build, including package installation and copying some necessary files.\n\n  It should always be done at least once after any clone/pull.\n\n\nIf a git dependency fail to build paket won't re-do it you can run their build scripts manually:\n\n\nIn \npaket-files\\github.com\\fsharp\\FsAutoComplete\n run \nbuild LocalRelease\n\n\nIn \npaket-files\\github.com\\fsharp-editing\\Forge\n run \nbuild Build\n\n\nIn VSCode two configurations are possible to run:\n\n\nUse \nBuild and Launch Extension\n\n\nStart the \nWatch\n task and when a build is done start \nLaunch Only\n\n\n\n\nWorking with FSAC\n\n\n\n\nRun \nbuild.cmd Build\n \\ \nbuild.sh Build\n\n\nOpen Ionide-vscode-fsharp in VSCode.\n\n\nSet \ndevMode\n to \ntrue\n in \nsrc/Core/LanguageService.fs\n\n\nOpen FSAC in VS\n\n\nStart FSAC.Suave in VS\n\n\nPress F5 in VSCode to build Ionide and start experimental instance", 
+            "title": "How to contribute"
+        }, 
+        {
+            "location": "/how-to-contribute/#how-to-contribute", 
+            "text": "", 
+            "title": "How to contribute"
+        }, 
+        {
+            "location": "/how-to-contribute/#prerequisites", 
+            "text": "Visual Studio Code  \ud83d\ude44  Mono  .Net Core 2.0  Node.js  Yarn", 
+            "title": "Prerequisites"
+        }, 
+        {
+            "location": "/how-to-contribute/#building", 
+            "text": "Fork, from the github interface https://github.com/ionide/ionide-vscode-fsharp\n - if you don't use a certificate for commiting to github:  git clone https://github.com/YOUR_GITHUB_USER/ionide-vscode-fsharp.git   if you use a certificate for github authentication:   git clone git@github.com:YOUR_GITHUB_USER/ionide-vscode-fsharp.git", 
+            "title": "Building"
+        }, 
+        {
+            "location": "/how-to-contribute/#first-time-build", 
+            "text": "cd ionide-vscode-fsharp\nyarn install\ndotnet restore\ncd src\ndotnet restore\ncd ..\n./build.sh  # or build.cmd if your OS is Windows  Everything is done via  build.cmd  \\  build.sh .   build Build  does a full-build, including package installation and copying some necessary files. \n  It should always be done at least once after any clone/pull.  If a git dependency fail to build paket won't re-do it you can run their build scripts manually:  In  paket-files\\github.com\\fsharp\\FsAutoComplete  run  build LocalRelease  In  paket-files\\github.com\\fsharp-editing\\Forge  run  build Build  In VSCode two configurations are possible to run:  Use  Build and Launch Extension  Start the  Watch  task and when a build is done start  Launch Only", 
+            "title": "First time build:"
+        }, 
+        {
+            "location": "/how-to-contribute/#working-with-fsac", 
+            "text": "Run  build.cmd Build  \\  build.sh Build  Open Ionide-vscode-fsharp in VSCode.  Set  devMode  to  true  in  src/Core/LanguageService.fs  Open FSAC in VS  Start FSAC.Suave in VS  Press F5 in VSCode to build Ionide and start experimental instance", 
+            "title": "Working with FSAC"
         }
     ]
 }
