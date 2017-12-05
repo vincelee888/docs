@@ -19,3 +19,19 @@ extra:
       link: 'https://twitter.com/IonideProject'
     - type: globe
       link: http://ionide.io
+
+pages:
+- Home: 'index.md'
+- User Guide:
+  - 'Editing evolved': 'editing.md'
+  - 'Project managment': 'project.md'
+  - 'Debugging': 'debugger.md'
+  - 'Testing': 'testing.md'
+  - 'Paket integration': 'paket.md'
+  - 'FAKE integration': 'fake.md'
+- Reference:
+  - 'List of commands': 'commands.md'
+  - 'List of options': 'options.md'
+- Advanced:
+  - 'Architecture': 'architecture.md'
+  - 'How to contribute': 'how-to-contribute.md'
