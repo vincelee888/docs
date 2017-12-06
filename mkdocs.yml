@@ -23,6 +23,7 @@ extra:
 pages:
 - Home: 'index.md'
 - User Guide:
+  - 'General info': 'general.md'
   - 'Editing evolved': 'editing.md'
   - 'Project managment': 'project.md'
   - 'Debugging': 'debugger.md'
