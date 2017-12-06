@@ -1,6 +1,6 @@
 # Editing evolved
 
-Ionide provides variaty of language features known from more "advanced" IDEs such as VS, and set of innovative features that makes you more productive then ever when writting F# code like CodeLenses, integration with FSharpLint and Quick Fixes.
+Ionide provides variety of language features known from more IDEs such as VS, and set of innovative features that makes you more productive then ever when writting F# code like CodeLenses, integration with FSharpLint and Quick Fixes.
 
 ## Basic features
 
