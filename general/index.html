@@ -13,7 +13,7 @@
         <meta name="description" content="Documentation for Ionide">
       
       
-        <link rel="canonical" href="http://ionide.io/docs/project/">
+        <link rel="canonical" href="http://ionide.io/docs/general/">
       
       
         <meta name="author" content="Krzysztof Cieslak">
@@ -38,7 +38,7 @@
     
     
       
-        <title>Project managment - Ionide Documentation</title>
+        <title>General info - Ionide Documentation</title>
       
     
     
@@ -94,7 +94,7 @@
                 Ionide Documentation
               </span>
               <span class="md-header-nav__topic">
-                Project managment
+                General info
               </span>
             
           
@@ -240,11 +240,47 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../general/" title="General info" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        General info
+      </label>
+    
+    <a href="./" title="General info" class="md-nav__link md-nav__link--active">
       General info
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fsautocomplete-service-runtime" title="FsAutoComplete Service Runtime" class="md-nav__link">
+    FsAutoComplete Service Runtime
+  </a>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -264,54 +300,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="toc">
-        Project managment
-      </label>
-    
-    <a href="./" title="Project managment" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../project/" title="Project managment" class="md-nav__link">
       Project managment
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="toc">Table of contents</label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#project-explorere" title="Project explorere" class="md-nav__link">
-    Project explorere
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msbuild-integration" title="MsBuild integration" class="md-nav__link">
-    MsBuild integration
-  </a>
-  
-</li>
-      
-      
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -485,15 +478,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#project-explorere" title="Project explorere" class="md-nav__link">
-    Project explorere
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#msbuild-integration" title="MsBuild integration" class="md-nav__link">
-    MsBuild integration
+  <a href="#fsautocomplete-service-runtime" title="FsAutoComplete Service Runtime" class="md-nav__link">
+    FsAutoComplete Service Runtime
   </a>
   
 </li>
@@ -512,13 +498,25 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/Ionide/docs/edit/master/docs/project.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/Ionide/docs/edit/master/docs/general.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="project-managment">Project managment</h1>
-<p>General information</p>
-<h2 id="project-explorere">Project explorere</h2>
-<h2 id="msbuild-integration">MsBuild integration</h2>
+                <h1 id="general-information">General information</h1>
+<h3 id="fsautocomplete-service-runtime">FsAutoComplete Service Runtime</h3>
+<p>The Ionide plugin relies on the F# compiler services for processing code in the editor.  The compiler services can run under the full framework (requiring <code>mono</code> on non-Windows platforms) or they can run under .NET Core as of Ionide 3.13.0.  This experimental feature can be enabled in the user settings.</p>
+<p><code>Preferences &gt; Settings</code> and add a new setting</p>
+<pre><code class="json">&quot;FSharp.fsacRuntime&quot;: &quot;netcore&quot;
+</code></pre>
+
+<p>There are two options:</p>
+<ul>
+<li><code>net</code> (default) full framework</li>
+<li><code>netcore</code> .NET Core framework</li>
+</ul>
+<p>After updating this setting, execute the "Reload Window" command in VS Code for the setting to take effect.</p>
+<blockquote>
+<p>NOTE: projects that use functionality incompatible with .NET Core, such as type providers, require this be set to <code>net</code> in order for the F# Autocomplete Service to process code using these features.</p>
+</blockquote>
                 
                   
                 
@@ -543,8 +541,8 @@
 
         <!-- Link to previous page -->
         
-          <a href="../editing/"
-              title="Editing evolved"
+          <a href=".."
+              title="Home"
               class="md-flex md-footer-nav__link md-footer-nav__link--prev"
               rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -557,7 +555,7 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Editing evolved
+                Home
               </span>
             </div>
           </a>
@@ -565,7 +563,7 @@
 
         <!-- Link to next page -->
         
-          <a href="../debugger/" title="Debugging"
+          <a href="../editing/" title="Editing evolved"
               class="md-flex md-footer-nav__link md-footer-nav__link--next"
               rel="next">
             <div class="md-flex__cell md-flex__cell--stretch
@@ -574,7 +572,7 @@
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Debugging
+                Editing evolved
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
