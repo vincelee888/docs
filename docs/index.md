@@ -34,4 +34,4 @@ Ionide plugins are activated when:
 
 * Opened workspace contains any `.fsproj`, `.fs`, or `.fsx` file
 
-* New `.fsproj`, `.fs`, or `.fsx` file is created in workspace that was not containign those files before.
+* New `.fsproj`, `.fs`, or `.fsx` file is created in workspace that was not containing those files before.
