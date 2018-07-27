@@ -296,6 +296,16 @@ The prefix displayed before the signature.
 
 ---
 
+### `FSharp.recordStubGeneration`
+
+Enables record stub generation.
+
+**Possible values:** bool
+
+**Default value:** `true`
+
+---
+
 ## Paket Plugin options
 
 ## FAKE Plugin options
