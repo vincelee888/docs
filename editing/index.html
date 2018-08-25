@@ -395,8 +395,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#find-all-refrences-peek-definition" title="Find all refrences &amp; Peek definition" class="md-nav__link">
-    Find all refrences &amp; Peek definition
+  <a href="#find-all-references-peek-definition" title="Find all references &amp; Peek definition" class="md-nav__link">
+    Find all references &amp; Peek definition
   </a>
   
 </li>
@@ -457,8 +457,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#unnecessery-open-statement-analyzer" title="Unnecessery open statement analyzer" class="md-nav__link">
-    Unnecessery open statement analyzer
+  <a href="#unnecessary-open-statement-analyzer" title="Unnecessary open statement analyzer" class="md-nav__link">
+    Unnecessary open statement analyzer
   </a>
   
 </li>
@@ -476,8 +476,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#refactorings" title="Refactorings" class="md-nav__link">
-    Refactorings
+  <a href="#refactoring" title="Refactoring" class="md-nav__link">
+    Refactoring
   </a>
   
     <nav class="md-nav">
@@ -540,18 +540,6 @@
   <li class="md-nav__item">
     <a href="../debugger/" title="Debugging" class="md-nav__link">
       Debugging
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../testing/" title="Testing" class="md-nav__link">
-      Testing
     </a>
   </li>
 
@@ -786,8 +774,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#find-all-refrences-peek-definition" title="Find all refrences &amp; Peek definition" class="md-nav__link">
-    Find all refrences &amp; Peek definition
+  <a href="#find-all-references-peek-definition" title="Find all references &amp; Peek definition" class="md-nav__link">
+    Find all references &amp; Peek definition
   </a>
   
 </li>
@@ -848,8 +836,8 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#unnecessery-open-statement-analyzer" title="Unnecessery open statement analyzer" class="md-nav__link">
-    Unnecessery open statement analyzer
+  <a href="#unnecessary-open-statement-analyzer" title="Unnecessary open statement analyzer" class="md-nav__link">
+    Unnecessary open statement analyzer
   </a>
   
 </li>
@@ -867,8 +855,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#refactorings" title="Refactorings" class="md-nav__link">
-    Refactorings
+  <a href="#refactoring" title="Refactoring" class="md-nav__link">
+    Refactoring
   </a>
   
     <nav class="md-nav">
@@ -920,7 +908,7 @@
                 
                 
                 <h1 id="editing-evolved">Editing evolved</h1>
-<p>Ionide provides variety of language features known from more IDEs such as VS, and set of innovative features that makes you more productive then ever when writting F# code like CodeLenses, integration with FSharpLint and Quick Fixes.</p>
+<p>Ionide provides variety of language features known from more IDEs such as VS, and set of innovative features that makes you more productive then ever when writing F# code like CodeLenses, integration with FSharpLint and Quick Fixes.</p>
 <h2 id="basic-features">Basic features</h2>
 <p>Following documentation is basic overview of features from Ionide's point of view. If you want to learn more about capabilities of VSCode visit <a href="https://code.visualstudio.com/docs/editor/codebasics">official documentation</a>. We strongly recommend exploring detailed VSCode documentation, especially if you've never worked with similar (Atom, ST3) editor before.</p>
 <h3 id="intellisense">IntelliSense</h3>
@@ -929,7 +917,7 @@
 <blockquote>
 <p>Tip: The suggestions widget supports CamelCase filtering meaning you can type the letters which are upper cased in a method name to limit the suggestions. For example, "cra" will quickly bring up "createApplication".</p>
 </blockquote>
-<p>Additionally, Ionide provides autocompletion for symbols not defined in currently opened modules and namespaces. If you accept such complition with <code>Tab</code> or <code>Enter</code> it will automatically insert appropriate <code>open</code> statement. This behaviour is controlled by <code>FSharp.externalAutocomplete</code> setting (default value is <code>true</code>).</p>
+<p>Additionally, Ionide provides autocompletion for symbols not defined in currently opened modules and namespaces. If you accept such completion with <code>Tab</code> or <code>Enter</code> it will automatically insert appropriate <code>open</code> statement. This behavior is controlled by <code>FSharp.externalAutocomplete</code> setting (default value is <code>true</code>).</p>
 <hr />
 <p>Additionally, you can see quick info for each method by either pressing <code>Ctrl+Space</code> or clicking the info icon. The accompanying documentation for the method will now expand to the side. The expanded documentation will stay so and will update as you navigate the list. You can close this by pressing <code>Ctrl+Space</code> again or by clicking on the close icon.</p>
 <p><img alt="Autocomplete" src="../images/autocomplete.gif" /></p>
@@ -940,7 +928,7 @@
 </blockquote>
 <p><img alt="Tooltips" src="../images/tooltips.gif" /></p>
 <h3 id="error-highlighting">Error highlighting</h3>
-<p>Ionide provides fast error highlighting for local changes, changes in current project and cross project changes without any need to build projects. Error highlighting for current projects works as you edit code, it suports files not saved to disk. For cross project error reporting you need to save the file - it will queue background project typechecking which will provide errors asynchronusly without blocking any editor operations.</p>
+<p>Ionide provides fast error highlighting for local changes, changes in current project and cross project changes without any need to build projects. Error highlighting for current projects works as you edit code, it supports files not saved to disk. For cross project error reporting you need to save the file - it will queue background project type checking which will provide errors asynchronously without blocking any editor operations.</p>
 <p>Errors in VSCode are shown in multiple places:
 <em> In the status bar, there is a summary of all errors and warnings counts.
 </em> You can click on the summary or press <code>Ctrl+Shift+M</code> to display the <code>PROBLEMS</code> panel with a list of all current errors.
@@ -950,9 +938,9 @@
 </blockquote>
 <p><img alt="Tooltips" src="../images/errors.gif" /></p>
 <h3 id="codelens-and-linelens">CodeLens and LineLens</h3>
-<p>Ionide displays type signatures of the symbols either as information over the symbol (inserting virtual line) or as inlined information next to symbol. The behaviour is customizable with <code>editor.codeLens</code>, <code>FSharp.lineLens.enabled</code> and <code>FSharp.lineLens.*</code> settings.</p>
+<p>Ionide displays type signatures of the symbols either as information over the symbol (inserting virtual line) or as inlined information next to symbol. The behavior is customizable with <code>editor.codeLens</code>, <code>FSharp.lineLens.enabled</code> and <code>FSharp.lineLens.*</code> settings.</p>
 <h3 id="quick-info-panel">Quick Info panel</h3>
-<p>You can check the type of symbol on which cursor currently is in the left part of VSCode Status Bar (bottom bar with different additional informations about current postion and file)</p>
+<p>You can check the type of symbol on which cursor currently is in the left part of VSCode Status Bar (bottom bar with different additional information about current position and file)</p>
 <h2 id="code-navigation">Code navigation</h2>
 <p>Visual Studio Code has a high productivity code editor which, when combined with programming language services, gives you the power of an IDE and the speed of a text editor. In this part we will show different ways of navigating around the code.</p>
 <h3 id="go-to-definition">Go to definition</h3>
@@ -973,8 +961,8 @@
 <h3 id="go-to-symbol-in-workspace">Go to symbol in workspace</h3>
 <p>Ionide support jumping to a symbol across files with <code>Ctrl+T</code>. Just type the first letter of a symbol you want to navigate to, regardless of which file contains it, and press <code>Enter</code>.</p>
 <p><img alt="Tooltips" src="images/goToSmbol.gif" /></p>
-<h3 id="find-all-refrences-peek-definition">Find all refrences &amp; Peek definition</h3>
-<p>Ionide also implements providers for finding all refrences (<code>Shift+F12</code>) of the symbol in currently open solution and peeking definition of the symbol (<code>Alt+F12</code>). VSCode provides peeked editors which enables you to see the source code of the other file inlined without switching context. You can navigate between different references in the peeked editor and make quick edits right there. Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor.</p>
+<h3 id="find-all-references-peek-definition">Find all references &amp; Peek definition</h3>
+<p>Ionide also implements providers for finding all references (<code>Shift+F12</code>) of the symbol in currently open solution and peeking definition of the symbol (<code>Alt+F12</code>). VSCode provides peeked editors which enables you to see the source code of the other file inlined without switching context. You can navigate between different references in the peeked editor and make quick edits right there. Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor.</p>
 <p><img alt="Find all references" src="../images/peek.gif" /></p>
 <h3 id="bracket-matching">Bracket matching</h3>
 <p>Matching brackets will be highlighted as soon as the cursor is near one of them.</p>
@@ -989,7 +977,7 @@
 <h3 id="go-to-msdn-help">Go to MSDN help</h3>
 <p>Ionide provides command for opening MSDN documentation for given symbol. It works only for symbols from F# standard library, and .Net standard library. You can execute command with <code>Shift+F1</code> or from Command Palette (<code>F#: Get Help</code>).</p>
 <h3 id="codeoutline-panel">CodeOutline panel</h3>
-<p>Ionide provides live updated panel showing symbols in current file. It's avaliable as a additional tree view (<code>F# Code Outline</code>) in VSCode Explorer panel. On the panel you can notice 2 buttons - right one collapse (<code>Click</code>) or extends (<code>Alt+Click</code>) all elements in the tree, left one refreshes default collapsing (only modules and namespaces extended, types collapsed).</p>
+<p>Ionide provides live updated panel showing symbols in current file. It's available as a additional tree view (<code>F# Code Outline</code>) in VSCode Explorer panel. On the panel you can notice 2 buttons - right one collapse (<code>Click</code>) or extends (<code>Alt+Click</code>) all elements in the tree, left one refreshes default collapsing (only modules and namespaces extended, types collapsed).</p>
 <blockquote>
 <p>Tip: Clicking on any node in the tree will move you to the place in file where symbol is defined. It's really useful for navigating around huge files.</p>
 </blockquote>
@@ -997,9 +985,9 @@
 <h2 id="advanced-analyzers">Advanced analyzers</h2>
 <h3 id="fsharplint-integration">FSharpLint integration</h3>
 <h3 id="unused-value-analyzer">Unused value analyzer</h3>
-<h3 id="unnecessery-open-statement-analyzer">Unnecessery open statement analyzer</h3>
+<h3 id="unnecessary-open-statement-analyzer">Unnecessary open statement analyzer</h3>
 <h3 id="simplify-name-analyzer">Simplify name analyzer</h3>
-<h2 id="refactorings">Refactorings</h2>
+<h2 id="refactoring">Refactoring</h2>
 <h3 id="rename-symbol">Rename symbol</h3>
 <h3 id="quick-fixes">Quick fixes</h3>
 <h3 id="generate-comment-scaffold">Generate comment scaffold</h3>

@@ -299,8 +299,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#getting-requirements" title="Getting Requirements" class="md-nav__link">
+    Getting Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-files-parsing" title="Project files parsing" class="md-nav__link">
+    Project files parsing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fsautocomplete-service-runtime" title="FsAutoComplete Service Runtime" class="md-nav__link">
     FsAutoComplete Service Runtime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msbuild-host" title="MsBuild Host" class="md-nav__link">
+    MsBuild Host
   </a>
   
 </li>
@@ -348,18 +369,6 @@
   <li class="md-nav__item">
     <a href="../debugger/" title="Debugging" class="md-nav__link">
       Debugging
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../testing/" title="Testing" class="md-nav__link">
-      Testing
     </a>
   </li>
 
@@ -510,8 +519,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#getting-requirements" title="Getting Requirements" class="md-nav__link">
+    Getting Requirements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#project-files-parsing" title="Project files parsing" class="md-nav__link">
+    Project files parsing
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fsautocomplete-service-runtime" title="FsAutoComplete Service Runtime" class="md-nav__link">
     FsAutoComplete Service Runtime
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#msbuild-host" title="MsBuild Host" class="md-nav__link">
+    MsBuild Host
   </a>
   
 </li>
@@ -536,6 +566,33 @@
                 
                 
                 <h1 id="general-information">General information</h1>
+<p>Ionide is complex tool with many options, and powerful capabilities, supporting multiple scenarios available to F# developers. As such is crucial to learn some general information about Ionide's requirements, and different configuration options that should be used depending on the different runtime and environments that can be used.</p>
+<h3 id="getting-requirements">Getting Requirements</h3>
+<ul>
+<li>
+<p>F# (Windows) - Easiest way to install latest versions of F# on Windows is using <a href="https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&amp;utm_source=docs.microsoft.com&amp;utm_campaign=button+cta&amp;utm_content=download+vs2017#build-tools-for-visual-studio-2017">VS Build Tools 2017</a>. If you use VS 2017, make sure that you've installed workload adding F# support.</p>
+</li>
+<li>
+<p>F# (Linux/MacOS) - F# on non-Windows platform is distributed as part of the <code>mono</code>. Installation guide and recent version of <code>mono</code> can be found on the <a href="https://www.mono-project.com/download/stable/">project webpage</a> and on the F# Software Foundation <a href="https://fsharp.org/use/linux/">"Use on Linux" page</a></p>
+</li>
+<li>
+<p>.Net Core SDK - .Net Core is modern, cross platform implementation of .Net Framework. Ionide is requiring it for set of features such as project modifications or debugging. The core part of SDK is <code>dotnet</code> CLI tool that provides easy way to create, build and run F# projects. What's important - the <code>dotnet</code> tool can be used also to create applications targeting also Full Framewok (like <code>net461</code>). For detailed instructions on installing .Net Core visit <a href="https://www.microsoft.com/net/core">official step-by-step installation guide</a></p>
+</li>
+<li>
+<p>VSCode C# plugin (optional) - Ionide's debugging capabilities relies on the debugger provided by Omnisharp team. To get it install <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp">C# extension from VSCode marketplace</a></p>
+</li>
+<li>
+<p>MsBuild 2015 (Windows only, optional) - For old, verbose <code>.fsproj</code> files on Windows MsBuild 2015 (14.0) needs to be additionally installed. You can download it <a href="https://www.microsoft.com/en-us/download/details.aspx?id=48159">here</a>. However, we highly recommend using new, SDK-based project files.</p>
+</li>
+</ul>
+<h3 id="project-files-parsing">Project files parsing</h3>
+<p>Ionide supports both old, verbose project files, and new SDK based files. However, we <strong>strongly recommend</strong> using SDK based project files. Plugin is also supporting parsing <code>.sln</code> files. When you open VSCode in particular workspace, Ionide will try to find all <code>.sln</code> files in this workspace and you will be presented with the option to open particular solution, or ignore solution files and load all projects in the solution.</p>
+<p><img alt="Choose Solution" src="../images/chooseSolution.png" /></p>
+<p>When Ionide detects any F# projects it will display them in the <code>Solution Explorer</code>. To access it you need to press F# logo button on the activity bar. In there you will see list of F# projects, their status, list of file and references. You can also right-click on different nodes in the tree to access operations that can be performed by the Ionide, such as <code>Build Project</code> or <code>Add file</code>.</p>
+<p><img alt="Project Explorer" src="../images/projectExplorer.png" /></p>
+<blockquote>
+<p>NOTE: In case of the problems with project parsing (Projects in status <code>loading failed</code>) you can right-click on the project node and use <code>Show Project Status</code> to see more details about the problem. We also recommend using <code>F#: Clear Cache</code> action and reloading the window, as first step in debugging any problems.</p>
+</blockquote>
 <h3 id="fsautocomplete-service-runtime">FsAutoComplete Service Runtime</h3>
 <p>The Ionide plugin relies on the F# compiler services for processing code in the editor.  The compiler services can run under the full framework (requiring <code>mono</code> on non-Windows platforms) or they can run under .NET Core as of Ionide 3.13.0.  This experimental feature can be enabled in the user settings.</p>
 <p><code>Preferences &gt; Settings</code> and add a new setting</p>
@@ -547,10 +604,15 @@
 <li><code>net</code> (default) full framework</li>
 <li><code>netcore</code> .NET Core framework</li>
 </ul>
-<p>After updating this setting, execute the "Reload Window" command in VS Code for the setting to take effect.</p>
+<p>After updating this setting, execute the <code>Reload Window</code> command in VS Code for the setting to take effect.</p>
 <blockquote>
 <p>NOTE: projects that use functionality incompatible with .NET Core, such as type providers, require this be set to <code>net</code> in order for the F# Autocomplete Service to process code using these features.</p>
 </blockquote>
+<h3 id="msbuild-host">MsBuild Host</h3>
+<p>The Ionide plugin provides deep integration with MsBuild - starting from project parsing (process of getting list of files, references and properties out of <code>fsproj</code> file) through project modifications (adding new files, ordering them, adding project-to-project references) to building and running projects. All features provided by Ionide in area of project management are described more in <a href="project">Project</a> section.</p>
+<p>Ionide can use either MsBuild installation provided by Full Framework (installed by VS / VS Build Tools on Windows and by Mono on Linux/MacOS) or the cross platform version of MsBuild provided by .Net Core SDK. In most cases Ionide makes automatic decision which one to use based on the type of project file, but projects that use functionality incompatible with .NET Core, such as type providers not updated to latest TP SDK, require using Full Framework installation of MsBuild.</p>
+<p>To control MsBuild Host that's used by Ionide you need to go to the F# Solution Explorer view and use <code>F#: Pick MsBuild Host</code> action</p>
+<p><img alt="MsBuildHost" src="../images/pickMsBuildHost.png" /></p>
                 
                   
                 
