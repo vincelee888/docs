@@ -22,7 +22,7 @@ Ionide for VSCode is set of 3 plugins avaliable in VSCode marketplace.
 
 * .Net Core SDK - .Net Core is lightweight, cross platform, modern implementation of .Net Framework. We strongly recommend installing it since some advanced Ionide features such as debugging and project scaffolding depends on SDK and `dotnet` CLI tooling even if your application is targetting Full Framework. For detailed instructions on installing .Net Core visit [official step-by-step installation guide](https://www.microsoft.com/net/core)
 
-* VSCode C# plugin - Ionide's debugging capabilities relays on the debugger provided by Omnisharp team. To get it install [C# extension from VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+* VSCode C# plugin (optional) - Ionide's debugging capabilities relies on the debugger provided by Omnisharp team. To get it install [C# extension from VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
 
 ## Plugin installation
 
