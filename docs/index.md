@@ -18,11 +18,11 @@ Ionide for VSCode is set of 3 plugins avaliable in VSCode marketplace.
 
 * F# - it is a mature, open source, cross-platform, functional-first programming language. It empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. Ionide supports any version of F# >= 3.0 but we do recommend using F# 4.1. Detailed installation instructions can be found of F# Software foundation webpage - for [Windows](http://fsharp.org/use/windows/), [MacOS](http://fsharp.org/use/mac/), and [Linux](http://fsharp.org/use/linux/)
 
-* MsBuild 2015 (Windows only) - On Windows MsBuild 2015 (14.0) needs to be additionally installed. You can download it [here](https://www.microsoft.com/en-us/download/details.aspx?id=48159)
-
 * .Net Core SDK - .Net Core is lightweight, cross platform, modern implementation of .Net Framework. We strongly recommend installing it since some advanced Ionide features such as debugging and project scaffolding depends on SDK and `dotnet` CLI tooling even if your application is targetting Full Framework. For detailed instructions on installing .Net Core visit [official step-by-step installation guide](https://www.microsoft.com/net/core)
 
 * VSCode C# plugin (optional) - Ionide's debugging capabilities relies on the debugger provided by Omnisharp team. To get it install [C# extension from VSCode marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)
+
+* MsBuild 2015 (Windows only, optional) - For old, verbose `.fsproj` files on Windows MsBuild 2015 (14.0) needs to be additionally installed. You can download it [here](https://www.microsoft.com/en-us/download/details.aspx?id=48159). However, we highly recommend using new, SDK-based project files.
 
 ## Plugin installation
 

@@ -27,7 +27,6 @@ pages:
   - 'Editing evolved': 'editing.md'
   - 'Project managment': 'project.md'
   - 'Debugging': 'debugger.md'
-  - 'Testing': 'testing.md'
   - 'Paket integration': 'paket.md'
   - 'FAKE integration': 'fake.md'
 - Reference:

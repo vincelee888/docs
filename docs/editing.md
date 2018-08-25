@@ -1,6 +1,6 @@
 # Editing evolved
 
-Ionide provides variety of language features known from more IDEs such as VS, and set of innovative features that makes you more productive then ever when writting F# code like CodeLenses, integration with FSharpLint and Quick Fixes.
+Ionide provides variety of language features known from more IDEs such as VS, and set of innovative features that makes you more productive then ever when writing F# code like CodeLenses, integration with FSharpLint and Quick Fixes.
 
 ## Basic features
 
@@ -14,7 +14,7 @@ You can trigger IntelliSense in any editor window by typing `Ctrl+Space` or by t
 
 > Tip: The suggestions widget supports CamelCase filtering meaning you can type the letters which are upper cased in a method name to limit the suggestions. For example, "cra" will quickly bring up "createApplication".
 
-Additionally, Ionide provides autocompletion for symbols not defined in currently opened modules and namespaces. If you accept such complition with `Tab` or `Enter` it will automatically insert appropriate `open` statement. This behaviour is controlled by `FSharp.externalAutocomplete` setting (default value is `true`).
+Additionally, Ionide provides autocompletion for symbols not defined in currently opened modules and namespaces. If you accept such completion with `Tab` or `Enter` it will automatically insert appropriate `open` statement. This behavior is controlled by `FSharp.externalAutocomplete` setting (default value is `true`).
 
 ---
 
@@ -33,7 +33,7 @@ Ionide provides rich information about the symbols you hover on - structured sig
 
 ### Error highlighting
 
-Ionide provides fast error highlighting for local changes, changes in current project and cross project changes without any need to build projects. Error highlighting for current projects works as you edit code, it suports files not saved to disk. For cross project error reporting you need to save the file - it will queue background project typechecking which will provide errors asynchronusly without blocking any editor operations.
+Ionide provides fast error highlighting for local changes, changes in current project and cross project changes without any need to build projects. Error highlighting for current projects works as you edit code, it supports files not saved to disk. For cross project error reporting you need to save the file - it will queue background project type checking which will provide errors asynchronously without blocking any editor operations.
 
 Errors in VSCode are shown in multiple places:
 * In the status bar, there is a summary of all errors and warnings counts.
@@ -46,11 +46,11 @@ Errors in VSCode are shown in multiple places:
 
 ### CodeLens and LineLens
 
-Ionide displays type signatures of the symbols either as information over the symbol (inserting virtual line) or as inlined information next to symbol. The behaviour is customizable with `editor.codeLens`, `FSharp.lineLens.enabled` and `FSharp.lineLens.*` settings.
+Ionide displays type signatures of the symbols either as information over the symbol (inserting virtual line) or as inlined information next to symbol. The behavior is customizable with `editor.codeLens`, `FSharp.lineLens.enabled` and `FSharp.lineLens.*` settings.
 
 ### Quick Info panel
 
-You can check the type of symbol on which cursor currently is in the left part of VSCode Status Bar (bottom bar with different additional informations about current postion and file)
+You can check the type of symbol on which cursor currently is in the left part of VSCode Status Bar (bottom bar with different additional information about current position and file)
 
 ## Code navigation
 
@@ -80,9 +80,9 @@ Ionide support jumping to a symbol across files with `Ctrl+T`. Just type the fir
 
 ![Tooltips](images/goToSmbol.gif)
 
-### Find all refrences & Peek definition
+### Find all references & Peek definition
 
-Ionide also implements providers for finding all refrences (`Shift+F12`) of the symbol in currently open solution and peeking definition of the symbol (`Alt+F12`). VSCode provides peeked editors which enables you to see the source code of the other file inlined without switching context. You can navigate between different references in the peeked editor and make quick edits right there. Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor.
+Ionide also implements providers for finding all references (`Shift+F12`) of the symbol in currently open solution and peeking definition of the symbol (`Alt+F12`). VSCode provides peeked editors which enables you to see the source code of the other file inlined without switching context. You can navigate between different references in the peeked editor and make quick edits right there. Clicking on the peeked editor filename or double-clicking in the result list will open the reference in the outer editor.
 
 ![Find all references](images/peek.gif)
 
@@ -104,7 +104,7 @@ Ionide provides command for opening MSDN documentation for given symbol. It work
 
 ### CodeOutline panel
 
-Ionide provides live updated panel showing symbols in current file. It's avaliable as a additional tree view (`F# Code Outline`) in VSCode Explorer panel. On the panel you can notice 2 buttons - right one collapse (`Click`) or extends (`Alt+Click`) all elements in the tree, left one refreshes default collapsing (only modules and namespaces extended, types collapsed).
+Ionide provides live updated panel showing symbols in current file. It's available as a additional tree view (`F# Code Outline`) in VSCode Explorer panel. On the panel you can notice 2 buttons - right one collapse (`Click`) or extends (`Alt+Click`) all elements in the tree, left one refreshes default collapsing (only modules and namespaces extended, types collapsed).
 
 > Tip: Clicking on any node in the tree will move you to the place in file where symbol is defined. It's really useful for navigating around huge files.
 
@@ -116,11 +116,11 @@ Ionide provides live updated panel showing symbols in current file. It's avaliab
 
 ### Unused value analyzer
 
-### Unnecessery open statement analyzer
+### Unnecessary open statement analyzer
 
 ### Simplify name analyzer
 
-## Refactorings
+## Refactoring
 
 ### Rename symbol
 
