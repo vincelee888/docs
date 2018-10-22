@@ -2,6 +2,6 @@
 
 General information
 
-## Project explorere
+## Project explorer
 
 ## MsBuild integration
